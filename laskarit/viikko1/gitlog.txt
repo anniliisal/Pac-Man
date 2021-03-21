@@ -1,0 +1,31 @@
+Anni-Liisa-MacBook-Pro:tiedostoja anni-liisalaaksonen$ git log --stat | cat
+commit 968e526b370c9616485c58fe8c6c3c0c1d6b293f
+Author: Anni-Liisa <anniliisa.laaksonen@gmail.com>
+Date:   Sun Mar 21 16:54:47 2021 +0200
+
+    muokkaus
+
+ tiedostoja/file2 | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 905a9f09d5d674b3f641d8783046249e26e1df6e
+Author: Anni-Liisa <anniliisa.laaksonen@gmail.com>
+Date:   Sun Mar 21 16:53:56 2021 +0200
+
+    muutos
+
+ tiedostoja/{file1 => file22} | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit a1097ace6d85f297ffcf56619d60c125dbc6a823
+Author: Anni-Liisa <anniliisa.laaksonen@gmail.com>
+Date:   Sun Mar 21 16:50:05 2021 +0200
+
+    muutos
+
+ tiedostoja/file3 | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit a1354feeef04c9df1360582352b1d2f436b31faa
+Author: Anni-Liisa <anniliisa.laaksonen@gmail.com>
+Date:   Sun Mar 21 16:36:29 2021 +0200
