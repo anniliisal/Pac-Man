@@ -6,7 +6,7 @@ https://github.com/anniliisal/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlo
 
 
 
-
+https://github.com/anniliisal/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt
 
 
 
