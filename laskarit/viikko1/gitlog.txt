@@ -1,3 +1,4 @@
+
 Anni-Liisa-MacBook-Pro:tiedostoja anni-liisalaaksonen$ git log --stat | cat
 commit 102f2b16633b9d6c419162744761c761e2205de5
 Author: Anni-Liisa <anniliisa.laaksonen@gmail.com>
