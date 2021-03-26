@@ -7,6 +7,8 @@
 
 [komentorivi.txt](https://github.com/anniliisal/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
+[dokumentaatio](https://github.com/anniliisal/ot-harjoitustyo)
+
 
 
 
