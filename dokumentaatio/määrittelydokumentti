@@ -1,12 +1,12 @@
 # Vaativuusmäärittely
 
-# Sovelluksen tarkoitus
+## Sovelluksen tarkoitus
 
 Sovelluksella pelataan Pac-Man tyylistä peliä. Pac-manilla liikutaan sokkeloita pitkin ja syödään pisteitä. 
 Kentällä liikkuu myös haamuja, joita pitää varoa. 
 
 
-# Perusversion tarjoama toiminnallisuus
+### Perusversion tarjoama toiminnallisuus
 
 - Pelaaja valitsee aloita peli, jolloin avautuu pelinäkymä. 
 - Pelaaja liikuttaa Pac-mania sokkeloita pitkin ja se syö pisteitä niiden kohdalle osuessa.
@@ -14,7 +14,7 @@ Kentällä liikkuu myös haamuja, joita pitää varoa.
 - Pelin voi voittaa, jos saa kerättyä kaikki pisteet ilman haamuihin törmäämistä.
 - Pelin päättyessä näytölle ilmestyy kerättyjen pisteiden määrä ja pelin voi halutessaan aloittaa alusta. 
 
-# Jatkokehitysideoita
+#### Jatkokehitysideoita
 
 - Pelaajalla on jokin määrä elämiä, jotka vähenevät haamuun osuessa, eli peli ei päättyisi ensimmäisestä osumasta.
 - Pelissä on eriarvoisia pisteitä.
