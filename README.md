@@ -9,6 +9,8 @@
 
 [dokumentaatio](https://github.com/anniliisal/ot-harjoitustyo/tree/master/dokumentaatio)
 
+[työaikakirjanpito](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito)
+
 
 
 
