@@ -11,6 +11,8 @@
 
 [työaikakirjanpito](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito)
 
+[testikattavuus screenshot](https://github.com/anniliisal/ot-harjoitustyo/blob/master/laskarit/viikko2/testikattavuus_screenshot.png)
+
 
 
 
