@@ -7,9 +7,9 @@
 
 [komentorivi.txt](https://github.com/anniliisal/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
-[määrittelydokumentti](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/vaativuusmäärittely)
+[vaativuusmäärittely.md](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/vaativuusmäärittely.md)
 
-[työaikakirjanpito](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito)
+[työaikakirjanpito.md](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
 [testikattavuus screenshot](https://github.com/anniliisal/ot-harjoitustyo/blob/master/laskarit/viikko2/testikattavuus_screenshot.png)
 
