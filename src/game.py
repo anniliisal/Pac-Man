@@ -1,5 +1,5 @@
-import pygame
 
+import pygame
 
 
 
@@ -44,6 +44,7 @@ class Pacman:
 
                 if event.type == pygame.QUIT:
                     exit()
+                
         if self.right:
             self.pacman_x += 4
  
