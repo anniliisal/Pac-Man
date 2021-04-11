@@ -7,7 +7,7 @@ class Game:
     
     def __init__(self):
         pygame.init()
-        self.screen = pygame.display.set_mode((840, 450))
+        self.screen = pygame.display.set_mode((490, 680))
         
         
         self.pacman_x = 100
@@ -48,6 +48,18 @@ class Game:
         if self.move_down == True:
             self.pacman_y += 1
 
+        if self.pacman_x + self.pacman.get_width() >= 490:
+            self.pacman_x -= 1
+        if self.pacman_x + self.pacman.get_width() <= 55:
+            self.pacman_x += 1
+        if self.pacman_y + self.pacman.get_width() >= 680:
+            self.pacman_y -= 1
+        if self.pacman_y + self.pacman.get_width() <= 60:
+            self.pacman_y += 1
+        
+        
+
+
     def move_right(self, step: bool):
         if step == True:
             self.move_right = True
@@ -71,6 +83,7 @@ class Game:
             self.move_down = True
         if step == False:
             self.move_down = False
+        
 
 
 if __name__=="__main__":
