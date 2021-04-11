@@ -1,60 +1,55 @@
 import pygame
 
+from game import *
+
 
 class Pacman:
     
-    def __init__(self, pacman: pygame.Surface, pacman_x: int, pacman_y: int):
+    def __init__(self):
         pygame.init()
-        self.pacman = pacman
-        self.pacman_x = pacman_x
-        self.pacman_y = pacman_y
-        self.left = False
-        self.right = False
-        self.up = False
-        self.down = False
-    
-
-    def move(self):
+        self.step = False
+        self.load_pacman()
         
-            for event in pygame.event.get():
-                if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_LEFT:
-                        self.left = True
 
-                    if event.key == pygame.K_RIGHT:
-                        self.right = True
-                    
-                    if event.key == pygame.K_UP:
-                        self.up = True
- 
-                    if event.key == pygame.K_DOWN:
-                        self.down = True
- 
-                if event.type == pygame.KEYUP: 
- 
-                    if event.key == pygame.K_LEFT:
-                        self.left = False
-                    if event.key == pygame.K_RIGHT:
-                        self.right = False
-                    if event.key == pygame.K_UP:
-                        self.up = False
-                    if event.key == pygame.K_DOWN:
-                        self.down = False
+    def load_pacman(self):
+        self.pacman = pygame.image.load("/Users/anni-liisalaaksonen/ot-harjoitustyo/ot-harjoitustyo-3/src/pacman3.png")
+        return self.pacman
 
-                if event.type == pygame.QUIT:
-                    exit()
-                
-           
+        
+    def move(self):
+        for event in pygame.event.get():
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_LEFT:
+                    step = True
+                    Game.move_left(self, step)
+                if event.key == pygame.K_RIGHT:
+                    step = True
+                    Game.move_right(self, step)
+                if event.key == pygame.K_UP:
+                    step = True
+                    Game.move_up(self, step)
+                if event.key == pygame.K_DOWN:
+                    step = True
+                    Game.move_down(self, step)
  
-            if self.left:
-                self.pacman_x -= 4
+            if event.type == pygame.KEYUP: 
  
-            if self.up:
-                self.pacman_y -= 4
- 
-            if self.down:
-                self.pacman_y += 4
+                if event.key == pygame.K_LEFT:
+                    step = False
+                    Game.move_left(self, step)
+                if event.key == pygame.K_RIGHT:
+                    step = False
+                    Game.move_right(self, step)
+                if event.key == pygame.K_UP:
+                    step = False
+                    Game.move_up(self, step)
+                if event.key == pygame.K_DOWN:
+                    step = False
+                    Game.move_down(self, step)
 
-if __name__=="__main__":
-    Pacman()
+            if event.type == pygame.QUIT:
+                exit()
+        
+
+
  
