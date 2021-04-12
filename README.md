@@ -1,6 +1,7 @@
-# OT_harjoitustyö
-**ihanaa** opiskella ohjelmistotekniikkaa! :)
-*Anni, 21.3.2021*
+# Pac-Man
+
+Sovelluksella pelataan Pac-Man tyylistä peliä. Pac-manilla liikutaan sokkeloita pitkin ja syödään pisteitä.
+Kentällä liikkuu myös haamuja joita pitää varoa. 
 
 [gitlog.txt](https://github.com/anniliisal/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
 
