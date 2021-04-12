@@ -1,18 +1,16 @@
 [tool.poetry]
-name = "ot-harjoitustyo_oikea"
+name = "ot-harjoitustyo-2"
 version = "0.1.0"
 description = ""
 authors = ["Anni-Liisa <anniliisa.laaksonen@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.6"
 cowsay = "^3.0"
-invoke = "^1.5.0"
 pygame = "^2.0.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.3"
-coverage = "^5.5"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
