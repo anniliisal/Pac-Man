@@ -21,6 +21,10 @@ Sovellusta on testattu Python versiolla 3.9.4
 Suorita ohjelma komennolla:
 
 *poetry run invoke start*
+ 
+tai:
+
+*poetry run python3 src/game.py*
 
 **Testaus**
 
