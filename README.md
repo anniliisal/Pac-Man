@@ -15,23 +15,23 @@ Sovellusta on testattu Python versiolla 3.9.4
 
 #### Komentorivitoiminnot
 
-**Ohjelman suoritus
+**Ohjelman suoritus**
 
 Suorita ohjelma komennolla:
 
 *poetry run invoke start
 
-**Testaus
+**Testaus**
 
 Suorita ohjelman testit komennolla:
 
-*poetry run invoke test
+*poetry run invoke test*
 
-**Testikattavuus
+**Testikattavuus**
 
 Generoi ohjelman testikattavuus komennolla:
 
-*poetry run invoke coverage-report
+*poetry run invoke coverage-report*
 
 Raportti generoituu htmlcov-hakemistoon.
 
