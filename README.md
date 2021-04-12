@@ -19,7 +19,7 @@ Sovellusta on testattu Python versiolla 3.9.4
 
 Suorita ohjelma komennolla:
 
-*poetry run invoke start
+*poetry run invoke start*
 
 **Testaus**
 
