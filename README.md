@@ -32,6 +32,11 @@ Suorita ohjelman testit komennolla:
 
 *poetry run invoke test*
 
+tai:
+
+*poetry run python3 src/tests/Game_test.py*
+
+
 **Testikattavuus**
 
 Generoi ohjelman testikattavuus komennolla:
