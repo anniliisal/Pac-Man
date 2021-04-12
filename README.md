@@ -5,7 +5,7 @@ Kentällä liikkuu myös haamuja joita pitää varoa.
 
 ## Python-versio
 
-Sovellusta on testattu Python versiolla 3.9.4
+Sovellusta on testattu Python versiolla 3.6
 
 ## Dokumentaatio
 
