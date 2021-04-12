@@ -12,7 +12,7 @@ class Pacman:
         
 
     def load_pacman(self):
-        self.pacman = pygame.image.load("/Users/anni-liisalaaksonen/ot-harjoitustyo/ot-harjoitustyo-3/src/pacman3.png")
+        self.pacman = pygame.image.load("/Users/anni-liisalaaksonen/ot-harjoitustyo_oikea/ot-harjoitustyo-1/src/pacman3.png")
         return self.pacman
 
         
