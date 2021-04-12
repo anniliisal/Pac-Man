@@ -13,6 +13,16 @@ Sovellusta on testattu Python versiolla 3.6
 
 [työaikakirjanpito.md](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
+## Asennus
+
+Asenna riippuvuudet komennoilla:
+
+*poetry install*
+*poetry add cowsay*
+*poetry add invoke*
+*poetry add coverage --dev*
+*poetry add pygame*
+
 
 ## Komentorivitoiminnot
 
