@@ -13,6 +13,7 @@ Sovellusta on testattu Python versiolla 3.9.4
 
 [työaikakirjanpito.md](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
+
 #### Komentorivitoiminnot
 
 **Ohjelman suoritus**
