@@ -22,9 +22,6 @@ Suorita ohjelma komennolla:
 
 *poetry run invoke start*
  
-tai:
-
-*poetry run python3 src/game.py*
 
 **Testaus**
 
