@@ -3,16 +3,46 @@
 Sovelluksella pelataan Pac-Man tyylistä peliä. Pac-manilla liikutaan sokkeloita pitkin ja syödään pisteitä.
 Kentällä liikkuu myös haamuja joita pitää varoa. 
 
-[gitlog.txt](https://github.com/anniliisal/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
+## Python-versio
 
+Sovellusta on testattu Python versiolla 3.9.4
 
-[komentorivi.txt](https://github.com/anniliisal/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+### Dokumentaatio
 
 [vaativuusmäärittely.md](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/vaativuusmäärittely.md)
 
 [työaikakirjanpito.md](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
-[testikattavuus screenshot](https://github.com/anniliisal/ot-harjoitustyo/blob/master/laskarit/viikko2/testikattavuus_screenshot.png)
+#### Komentorivitoiminnot
+
+**Ohjelman suoritus
+
+Suorita ohjelma komennolla:
+
+*poetry run invoke start
+
+**Testaus
+
+Suorita ohjelman testit komennolla:
+
+*poetry run invoke test
+
+**Testikattavuus
+
+Generoi ohjelman testikattavuus komennolla:
+
+*poetry run invoke coverage-report
+
+Raportti generoituu htmlcov-hakemistoon.
+
+
+
+
+
+
+
+
+
 
 
 
