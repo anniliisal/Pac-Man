@@ -48,6 +48,12 @@ Generoi ohjelman testikattavuus komennolla:
 
 Raportti generoituu htmlcov-hakemistoon.
 
+**Laatutarkistus**
+
+Laatuvaatimukset voi tarkistaa komennolla:
+
+*poetry run invoke lint*
+
 
 
 
