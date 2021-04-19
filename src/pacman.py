@@ -1,19 +1,24 @@
+
 import pygame
-
-from game import *
-
-
+from game import * 
 class Pacman:
     
     def __init__(self):
-        pygame.init()
         self.step = False
-        self.load_pacman()
+
+
+    
         
 
-    def load_pacman(self):
-        self.pacman = pygame.image.load("src/pacman3.png")
+    def load_pacman1(self):
+        self.pacman = pygame.image.load("src/pacman1.png")
+        
         return self.pacman
+
+    def load_pacman2(self):
+        self.pacman2 = pygame.image.load("src/pacman2.png")
+        
+        return self.pacman2
 
         
     def move(self):
@@ -49,6 +54,40 @@ class Pacman:
 
             if event.type == pygame.QUIT:
                 exit()
+
+
+    def pacman_place(self):
+        pass
+        
+        if self.pacman_start:
+            self.screen.blit(self.pacman1, (self.pacman_x, self.pacman_y))
+        if self.pacman_face_right:
+            self.screen.blit(self.pacman1, (self.pacman_x, self.pacman_y))
+        if self.pacman_face_left:
+            self.screen.blit(self.pacman_left, (self.pacman_x, self.pacman_y))
+        if self.pacman_face_up:
+            self.screen.blit(self.pacman_up, (self.pacman_x, self.pacman_y))
+        if self.pacman_face_down:
+            self.screen.blit(self.pacman_down, (self.pacman_x, self.pacman_y))
+    
+
+        if self.move_right == True:
+            self.pacman_x += 4
+
+        if self.move_left == True:
+            self.pacman_x -= 4
+        
+        if self.move_up == True:
+            self.pacman_y -= 4
+
+        if self.move_down == True:
+            self.pacman_y += 4
+
+
+        
+
+
+
         
 
 
