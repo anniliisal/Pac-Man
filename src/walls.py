@@ -1,6 +1,6 @@
 import pygame
 
-from src.game import Game
+
 purple = (169, 0, 255)
 
 
