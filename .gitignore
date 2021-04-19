@@ -3,4 +3,4 @@ src/__pycache__
 .pytest_cache
 htmlcov
 .coverage
-
+src/tests/__pycache__
