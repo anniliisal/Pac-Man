@@ -1,14 +1,15 @@
-
 import pygame
 
-from pacman import *
-from walls import *
+from .walls import Wall
+from .pacman import Pacman
 
 
 class Game:
 
     def __init__(self):
         pygame.init()
+        
+        
 
         self.pacman_x = 100
         self.pacman_y = 100
@@ -38,7 +39,7 @@ class Game:
     def draw_screen(self):
         self.screen = self.screen_measures()
         self.screen.fill((0, 0, 0))
-        Wall.draw_walls(self, self.screen)
+        walls.draw_walls(self, self.screen)
         self.pacman1 = Pacman.load_pacman1(self)
         self.pacman2 = Pacman.load_pacman2(self)
         if self.pacman_start:

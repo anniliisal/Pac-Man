@@ -1,6 +1,6 @@
 
-import pygame
-from game import *
+from src.game import Game
+
 
 
 class Pacman:
@@ -52,28 +52,3 @@ class Pacman:
             if event.type == pygame.QUIT:
                 exit()
 
-    def pacman_place(self):
-        pass
-
-        if self.pacman_start:
-            self.screen.blit(self.pacman1, (self.pacman_x, self.pacman_y))
-        if self.pacman_face_right:
-            self.screen.blit(self.pacman1, (self.pacman_x, self.pacman_y))
-        if self.pacman_face_left:
-            self.screen.blit(self.pacman_left, (self.pacman_x, self.pacman_y))
-        if self.pacman_face_up:
-            self.screen.blit(self.pacman_up, (self.pacman_x, self.pacman_y))
-        if self.pacman_face_down:
-            self.screen.blit(self.pacman_down, (self.pacman_x, self.pacman_y))
-
-        if self.move_right == True:
-            self.pacman_x += 4
-
-        if self.move_left == True:
-            self.pacman_x -= 4
-
-        if self.move_up == True:
-            self.pacman_y -= 4
-
-        if self.move_down == True:
-            self.pacman_y += 4
