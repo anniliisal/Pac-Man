@@ -3,12 +3,13 @@ import pygame
 
 from pacman import *
 from walls import *
-        
+
+
 class Game:
-    
+
     def __init__(self):
         pygame.init()
-        
+
         self.pacman_x = 100
         self.pacman_y = 100
         self.move_down = False
@@ -20,8 +21,7 @@ class Game:
         self.pacman_face_right = False
         self.pacman_face_up = False
         self.pacman_face_down = False
-        
-        
+
         self.play()
 
     def play(self):
@@ -51,20 +51,18 @@ class Game:
             self.screen.blit(self.pacman_up, (self.pacman_x, self.pacman_y))
         if self.pacman_face_down:
             self.screen.blit(self.pacman_down, (self.pacman_x, self.pacman_y))
-    
 
         if self.move_right == True:
             self.pacman_x += 4
 
         if self.move_left == True:
             self.pacman_x -= 4
-        
+
         if self.move_up == True:
             self.pacman_y -= 4
 
         if self.move_down == True:
             self.pacman_y += 4
-    
 
     def move_right(self, step: bool):
         if step == True:
@@ -76,8 +74,7 @@ class Game:
                 self.pacman_face_up = False
                 self.pacman_face_down = False
                 self.screen.blit(self.pacman1, (self.pacman_x, self.pacman_y))
-                
-            
+
         if step == False:
             self.move_right = False
 
@@ -90,11 +87,13 @@ class Game:
                 self.pacman_face_up = False
                 self.pacman_face_down = False
                 self.pacman_face_left = True
-                self.pacman_left = pygame.transform.flip(self.pacman1, True, False)
-                self.screen.blit(self.pacman_left, (self.pacman_x, self.pacman_y))
-                
+                self.pacman_left = pygame.transform.flip(
+                    self.pacman1, True, False)
+                self.screen.blit(self.pacman_left,
+                                 (self.pacman_x, self.pacman_y))
+
         if step == False:
-            self.move_left= False
+            self.move_left = False
 
     def move_up(self, step: bool):
         if step == True:
@@ -106,8 +105,9 @@ class Game:
                 self.pacman_face_down = False
                 self.pacman_face_up = True
                 self.pacman_up = self.pacman2
-                self.screen.blit(self.pacman_up, (self.pacman_x, self.pacman_y))
-                
+                self.screen.blit(
+                    self.pacman_up, (self.pacman_x, self.pacman_y))
+
         if step == False:
             self.move_up = False
 
@@ -120,15 +120,14 @@ class Game:
                 self.pacman_face_left = False
                 self.pacman_face_up = False
                 self.pacman_face_down = True
-                self.pacman_down = pygame.transform.flip(self.pacman2, False, True)
-                self.screen.blit(self.pacman_down, (self.pacman_x, self.pacman_y))  
-                
+                self.pacman_down = pygame.transform.flip(
+                    self.pacman2, False, True)
+                self.screen.blit(self.pacman_down,
+                                 (self.pacman_x, self.pacman_y))
+
         if step == False:
             self.move_down = False
-        
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     game = Game()
-
-    
