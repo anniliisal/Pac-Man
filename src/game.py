@@ -1,7 +1,7 @@
 import pygame
 
-from walls import Wall
-from pacman import Pacman
+from src.walls import Wall
+from src.pacman import Pacman
 
 
 class Game:
