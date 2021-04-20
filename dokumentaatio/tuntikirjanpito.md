@@ -8,5 +8,6 @@
 - 12.4, 5 tuntia, testailua laitoksen koneella
 - 14.4, 3 tuntia, projektin koodausta
 - 17.4, 2 tuntia, projektin koodausta
-- 19.4, 8 tuntia, projektin koodausta
-yhteensä: 26 tuntia 
+- 19.4, 8 tuntia, projektin koodausta, pylintin käyttöönotto
+- 20.4, 7 tuntia, projektin koodausta & luokkakaavion teko
+- yhteensä: 33 tuntia 
