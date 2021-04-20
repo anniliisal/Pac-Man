@@ -33,7 +33,6 @@ class Game:
             self.draw_screen()
             self.move()
             pygame.display.flip()
-            
 
     def draw_screen(self):
         self.screen.fill((0, 0, 0))
@@ -68,29 +67,29 @@ class Game:
     def move(self):
         for event in pygame.event.get():
             if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_LEFT:# pylint: disable=(no-member)
+                if event.key == pygame.K_LEFT:  # pylint: disable=(no-member)
                     step = True
                     self.pacman_move_left(step)
-                if event.key == pygame.K_RIGHT: # pylint: disable=(no-member)
+                if event.key == pygame.K_RIGHT:  # pylint: disable=(no-member)
                     step = True
-                    self.pacman_move_right(step)# pylint: disable=(no-member)
+                    self.pacman_move_right(step)  # pylint: disable=(no-member)
                 if event.key == pygame.K_UP:
                     step = True
                     self.pacman_move_up(step)
-                if event.key == pygame.K_DOWN:# pylint: disable=(no-member)
+                if event.key == pygame.K_DOWN:  # pylint: disable=(no-member)
                     step = True
                     self.pacman_move_down(step)
             if event.type == pygame.KEYUP:
-                if event.key == pygame.K_LEFT:# pylint: disable=(no-member)
+                if event.key == pygame.K_LEFT:  # pylint: disable=(no-member)
                     step = False
                     self.pacman_move_left(step)
-                if event.key == pygame.K_RIGHT:# pylint: disable=(no-member)
+                if event.key == pygame.K_RIGHT:  # pylint: disable=(no-member)
                     step = False
                     self.pacman_move_right(step)
-                if event.key == pygame.K_UP:# pylint: disable=(no-member)
+                if event.key == pygame.K_UP:  # pylint: disable=(no-member)
                     step = False
                     self.pacman_move_up(step)
-                if event.key == pygame.K_DOWN:# pylint: disable=(no-member)
+                if event.key == pygame.K_DOWN:  # pylint: disable=(no-member)
                     step = False
                     self.pacman_move_down(step)
             if event.type == pygame.QUIT:
@@ -109,8 +108,6 @@ class Game:
         if step is False:
             self.move_right = False
 
-    # metodi, jossa pacman ei katso mihinkään suuntaan?
-    
     def pacman_move_left(self, step: bool):
         if step is True:
             self.move_left = True
@@ -152,6 +149,7 @@ class Game:
                                  (self.pacman1_rect))
         if step is False:
             self.move_down = False
+
 
 if __name__ == "__main__":
     game = Game()
