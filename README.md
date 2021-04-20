@@ -13,6 +13,8 @@ Sovellusta on testattu Python versiolla 3.6
 
 [työaikakirjanpito.md](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
+[arkkitehtuuri.md](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
 ## Asennus
 
 Asenna riippuvuudet komennoilla:
@@ -22,6 +24,7 @@ Asenna riippuvuudet komennoilla:
 * *poetry add invoke*
 * *poetry add coverage --dev*
 * *poetry add pygame*
+* *poetry add pylint --dev*
 
 
 ## Komentorivitoiminnot
