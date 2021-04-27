@@ -3,6 +3,10 @@
 Sovelluksella pelataan Pac-Man tyylistä peliä. Pac-manilla liikutaan sokkeloita pitkin ja syödään pisteitä.
 Kentällä liikkuu myös haamuja joita pitää varoa. 
 
+## Release 1
+
+[viiko5](https://github.com/anniliisal/ot-harjoitustyo/releases)
+
 ## Python-versio
 
 Sovellusta on testattu Python versiolla 3.6
