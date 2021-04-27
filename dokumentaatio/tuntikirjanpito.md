@@ -10,4 +10,8 @@
 - 17.4, 2 tuntia, projektin koodausta
 - 19.4, 8 tuntia, projektin koodausta, pylintin käyttöönotto
 - 20.4, 7 tuntia, projektin koodausta & luokkakaavion teko
-- yhteensä: 38 tuntia 
+- 22.4, 3 tuntia, projektin koodausta
+- 24.4, 3 tuntia, projektin koodausta
+- 26.4, 6 tuntia, projektin koodausta
+- 27.4, 7 tuntia, testien tekemistä, koodin laadun & rakenteen tarkastusta, luokkakaavion tekeminen
+- yhteensä: 57 tuntia 
