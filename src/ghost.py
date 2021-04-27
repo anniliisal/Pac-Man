@@ -1,7 +1,7 @@
 
-import pygame
+#import pygame
 
 
-class Ghosts:
-    def __init__(self):
-        pass
+#class Ghosts:
+  #  def __init__(self):
+ #       pass

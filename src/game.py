@@ -29,6 +29,7 @@ class Game:
         pygame.init()# pylint: disable=(no-member)
         self.play()
 
+     
     def play(self):
         while True:
             self.draw_screen()
@@ -132,5 +133,4 @@ class Game:
             self.move_up = False
 
 
-if __name__ == "__main__":
-    game = Game()
+
