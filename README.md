@@ -5,7 +5,7 @@ Kentällä liikkuu myös haamuja joita pitää varoa.
 
 ## Release 1
 
-[viiko5](https://github.com/anniliisal/ot-harjoitustyo/releases)
+[viikko5](https://github.com/anniliisal/ot-harjoitustyo/releases)
 
 ## Python-versio
 
