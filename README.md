@@ -7,6 +7,8 @@ Kentällä liikkuu myös haamuja joita pitää varoa.
 
 [viikko5](https://github.com/anniliisal/ot-harjoitustyo/releases)
 
+Huom! Ekan releasen walls.py tiedostoon kirjoitettu kommentti törmäyksestä sittenkin aiheeton! eli törmäys toimii uudessa versiossa. :)
+
 ## Python-versio
 
 Sovellusta on testattu Python versiolla 3.6
