@@ -51,15 +51,9 @@ class Wall(pygame.sprite.Sprite):
     # suuntiin liikkumiseen. Nyt seinään osuminen yhdestä suunnasta estää mihinkään suuntaan liikkumisen. 
     # Eli vinkit ja ehdotukset on enemmän kuin tervetulleita!! :)
 
-    def collision(self, pacman, walls, down, up, right, left):
+    def collision(self, pacman, walls):
         hit_list = pygame.sprite.spritecollide(pacman, walls, False)
-        if len(hit_list) > 0 and left:
-            return"left"
-        if len(hit_list) > 0 and right:
-            return"right"
-        if len(hit_list) > 0 and up:
-            return"up"
-        if len(hit_list) > 0 and down:
-            return"down"
+        if len(hit_list) >= 1:
+            return True
         if len(hit_list) < 1:
             return False
