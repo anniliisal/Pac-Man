@@ -9,7 +9,7 @@ Kentällä liikkuu myös haamuja, joita pitää varoa.
 ### Perusversion tarjoama toiminnallisuus
 
 - Pelaaja valitsee aloita peli, jolloin avautuu pelinäkymä. 
-- Pelaaja liikuttaa Pac-mania sokkeloita pitkin ja se syö pisteitä niiden kohdalle osuessa.
+- Pelaaja liikuttaa Pac-mania sokkeloita pitkin ja se syö pisteitä niiden kohdalle osuessa. *tehty
 - Jos pelaaja osuu kentällä olevaan haamuun, peli päättyy.
 - Pelin voi voittaa, jos saa kerättyä kaikki pisteet ilman haamuihin törmäämistä.
 - Pelin päättyessä näytölle ilmestyy kerättyjen pisteiden määrä ja pelin voi halutessaan aloittaa alusta. 
