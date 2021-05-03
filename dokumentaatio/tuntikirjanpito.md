@@ -14,4 +14,7 @@
 - 24.4, 3 tuntia, projektin koodausta
 - 26.4, 6 tuntia, projektin koodausta
 - 27.4, 7 tuntia, testien tekemistä, koodin laadun & rakenteen tarkastusta, luokkakaavion tekeminen
-- yhteensä: 57 tuntia 
+- 29.4, 6 tuntia, projektin kodausta
+- 2.5, 2 tuntia, projektin koodausta
+- 3.5, 6 tuntia, projektin koodausta, testejä
+- yhteensä: 71 tuntia 

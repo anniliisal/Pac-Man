@@ -24,9 +24,9 @@ class Game:
         self.pacman = Pacman(self.x, self.y, self.move_left,
                              self.move_down, self.move_up)
         self.wall = Wall(self.x, self.y, self.width, self.height)
-        self.point = Point(self.x, self.y, self.width, self.height)
-        self.point_count = 0
+        self.point = Point(self.x, self.y)
         self.points = self.point.draw_points(self.screen, self.points)
+        self.point_count = 0
         pygame.init()# pylint: disable=(no-member)
         self.play()
 
@@ -42,14 +42,13 @@ class Game:
         self.screen = pygame.display.set_mode((self.width, self.height))
         self.screen.fill((0, 0, 0))
         hit = self.point.collect_points(self.pacman, self.points)
-        if hit is 1:
+        if hit == 1:
             self.point_count += 1
         self.font = pygame.font.SysFont("Arial", 24)
-        text = self.font.render("Points: " + str(self.point_count), True, (250, 0, 0))
+        text = self.font.render("Score: " + str(self.point_count), True, (18, 247, 110))
         self.screen.blit(text, (775,20))
         self.wall.draw_walls(self.screen, self.walls)
         self.points.draw(self.screen)        
-        self.all_sprites.add(self.walls, self.points)
         self.pacman_group.draw(self.screen)
 
     def update_place(self):

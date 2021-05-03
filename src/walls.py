@@ -28,12 +28,12 @@ class Wall(pygame.sprite.Sprite):
                       [810, 320, 80, 10],
                       [80, 200, 10, 270],
                       [180, 200, 10, 270],
-                      [710, 200, 10, 270],
-                      [810, 200, 10, 270],
-                      [545, 190, 175, 10],
+                      [700, 200, 10, 270],
+                      [800, 200, 10, 270],
+                      [535, 190, 175, 10],
                       [180, 190, 370, 10],
-                      [180, 460, 175, 10],
-                      [545, 460, 175, 10],
+                      [180, 460, 165, 10],
+                      [545, 460, 155, 10],
                       [280, 260, 10, 120],
                       [600, 260, 10, 120],
                       [280, 380, 330, 10],
@@ -45,11 +45,6 @@ class Wall(pygame.sprite.Sprite):
             wall = Wall(wall[0], wall[1], wall[2], wall[3])
             walls.add(wall)
         walls.draw(screen)
-
-    # Täällä tarkoitus tarkastaa törmääkö pacman seinään. On ollu suuria vaikeuksia keksiä, miten
-    # saa yhteen sunntaan liikkuvan pacmanit pysähtymään, ilman että se vaikuttaisi muihin
-    # suuntiin liikkumiseen. Nyt seinään osuminen yhdestä suunnasta estää mihinkään suuntaan liikkumisen. 
-    # Eli vinkit ja ehdotukset on enemmän kuin tervetulleita!! :)
 
     def collision(self, pacman, walls):
         hit_list = pygame.sprite.spritecollide(pacman, walls, False)
