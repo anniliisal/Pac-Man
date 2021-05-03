@@ -5,6 +5,7 @@ from walls import Wall
 from points import Point
 import pygame
 
+
 class TestGame(unittest.TestCase):
     def setUp(self):
         self.game = Game
@@ -28,17 +29,14 @@ class TestGame(unittest.TestCase):
         self.pacman = Pacman(self.x, self.y, self.move_left,
                              self.move_down, self.move_up)
         self.wall = Wall(self.x, self.y, self.width, self.height)
-        self.point = Point(self.x, self.y, self.width, self.height)
+        self.point = Point(self.x, self.y)
         self.point_count = 0
         self.points = self.point.draw_points(self.screen, self.points)
-        
-
 
     def test_move_left(self):
         find = self.pacman_move_left()
-        self.assertEqual(self.move_left, True) 
-        
-        
+        self.assertEqual(self.move_left, True)
+
     def test_move_right(self):
         find = self.pacman_move_right()
         self.assertEqual(self.move_right, True)
@@ -67,7 +65,6 @@ class TestGame(unittest.TestCase):
             self.move_up = False
             self.move_down = False
 
-
     def pacman_move_up(self):
         self.move_up = True
         if self.move_up:
@@ -75,7 +72,6 @@ class TestGame(unittest.TestCase):
             self.move_left = False
             self.move_right = False
             self.move_down = False
-
 
     def pacman_move_down(self):
         self.move_down = True
@@ -86,10 +82,9 @@ class TestGame(unittest.TestCase):
             self.move_up = False
 
     def test_point_collect(self):
-    
+
         hit = self.point.collect_points(self.pacman, self.points)
         self.assertEqual(hit, 1)
-
 
     def test_update_place_start(self):
         self.pacman = Pacman(
@@ -103,7 +98,7 @@ class TestGame(unittest.TestCase):
         self.move_right = True
         self.game.update_place(self)
         self.pacman = Pacman(
-                self.x, self.y, self.move_left, self.move_down, self.move_up)
+            self.x, self.y, self.move_left, self.move_down, self.move_up)
         x = 105
         y = 100
         self.assertEqual(self.x, x)
@@ -113,7 +108,7 @@ class TestGame(unittest.TestCase):
         self.move_left = True
         self.game.update_place(self)
         self.pacman = Pacman(
-                self.x, self.y, self.move_left, self.move_down, self.move_up)
+            self.x, self.y, self.move_left, self.move_down, self.move_up)
         x = 95
         y = 100
         self.assertEqual(self.x, x)
@@ -123,7 +118,7 @@ class TestGame(unittest.TestCase):
         self.move_up = True
         self.game.update_place(self)
         self.pacman = Pacman(
-                self.x, self.y, self.move_left, self.move_down, self.move_up)
+            self.x, self.y, self.move_left, self.move_down, self.move_up)
         x = 100
         y = 95
         self.assertEqual(self.x, x)
@@ -133,7 +128,7 @@ class TestGame(unittest.TestCase):
         self.move_down = True
         self.game.update_place(self)
         self.pacman = Pacman(
-                self.x, self.y, self.move_left, self.move_down, self.move_up)
+            self.x, self.y, self.move_left, self.move_down, self.move_up)
         x = 100
         y = 105
         self.assertEqual(self.x, x)
@@ -143,7 +138,7 @@ class TestGame(unittest.TestCase):
         self.move_right = True
         self.game.update_place(self)
         self.pacman = Pacman(
-                self.x, self.y, self.move_left, self.move_down, self.move_up)
+            self.x, self.y, self.move_left, self.move_down, self.move_up)
         self.collision = self.wall.collision(self.pacman, self.walls)
         if self.collision:
             x = 100
@@ -157,10 +152,10 @@ class TestGame(unittest.TestCase):
             self.assertEqual(self.y, y)
 
     def test_collision_left(self):
-        self.move_left= True
+        self.move_left = True
         self.game.update_place(self)
         self.pacman = Pacman(
-                self.x, self.y, self.move_left, self.move_down, self.move_up)
+            self.x, self.y, self.move_left, self.move_down, self.move_up)
         self.collision = self.wall.collision(self.pacman, self.walls)
         if self.collision:
             x = 100
@@ -173,12 +168,11 @@ class TestGame(unittest.TestCase):
             self.assertEqual(self.x, x)
             self.assertEqual(self.y, y)
 
-
     def test_collision_up(self):
-        self.move_up= True
+        self.move_up = True
         self.game.update_place(self)
         self.pacman = Pacman(
-                self.x, self.y, self.move_left, self.move_down, self.move_up)
+            self.x, self.y, self.move_left, self.move_down, self.move_up)
         self.collision = self.wall.collision(self.pacman, self.walls)
         if self.collision:
             x = 100
@@ -190,12 +184,12 @@ class TestGame(unittest.TestCase):
             y = 95
             self.assertEqual(self.x, x)
             self.assertEqual(self.y, y)
-    
+
     def test_collision_down(self):
         self.move_down = True
         self.game.update_place(self)
         self.pacman = Pacman(
-                self.x, self.y, self.move_left, self.move_down, self.move_up)
+            self.x, self.y, self.move_left, self.move_down, self.move_up)
         self.collision = self.wall.collision(self.pacman, self.walls)
         if self.collision:
             x = 100
@@ -207,10 +201,3 @@ class TestGame(unittest.TestCase):
             y = 105
             self.assertEqual(self.x, x)
             self.assertEqual(self.y, y)
-
-        
-
-
-    
-
-

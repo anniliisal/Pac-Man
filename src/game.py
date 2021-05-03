@@ -4,6 +4,7 @@ from walls import Wall
 from pacman import Pacman
 from points import Point
 
+
 class Game:
     def __init__(self):
         self.move_down = False
@@ -27,10 +28,9 @@ class Game:
         self.point = Point(self.x, self.y)
         self.points = self.point.draw_points(self.screen, self.points)
         self.point_count = 0
-        pygame.init()# pylint: disable=(no-member)
+        pygame.init()  # pylint: disable=(no-member)
         self.play()
 
-     
     def play(self):
         while True:
             self.draw_screen()
@@ -45,10 +45,11 @@ class Game:
         if hit == 1:
             self.point_count += 1
         self.font = pygame.font.SysFont("Arial", 24)
-        text = self.font.render("Score: " + str(self.point_count), True, (18, 247, 110))
-        self.screen.blit(text, (775,20))
+        text = self.font.render(
+            "Score: " + str(self.point_count), True, (18, 247, 110))
+        self.screen.blit(text, (775, 20))
         self.wall.draw_walls(self.screen, self.walls)
-        self.points.draw(self.screen)        
+        self.points.draw(self.screen)
         self.pacman_group.draw(self.screen)
 
     def update_place(self):
@@ -64,7 +65,7 @@ class Game:
             if self.collision:
                 self.x -= 5
                 self.pacman = Pacman(
-                self.x, self.y, self.move_left, self.move_down, self.move_up)
+                    self.x, self.y, self.move_left, self.move_down, self.move_up)
         if self.move_left:
             self.x -= 5
             self.pacman = Pacman(
@@ -73,7 +74,7 @@ class Game:
             if self.collision:
                 self.x += 5
                 self.pacman = Pacman(
-                self.x, self.y, self.move_left, self.move_down, self.move_up)
+                    self.x, self.y, self.move_left, self.move_down, self.move_up)
         if self.move_down:
             self.y += 5
             self.pacman = Pacman(
@@ -82,7 +83,7 @@ class Game:
             if self.collision:
                 self.y -= 5
                 self.pacman = Pacman(
-                self.x, self.y, self.move_left, self.move_down, self.move_up)
+                    self.x, self.y, self.move_left, self.move_down, self.move_up)
         if self.move_up:
             self.y -= 5
             self.pacman = Pacman(
@@ -91,23 +92,22 @@ class Game:
             if self.collision:
                 self.y += 5
                 self.pacman = Pacman(
-                self.x, self.y, self.move_left, self.move_down, self.move_up)
+                    self.x, self.y, self.move_left, self.move_down, self.move_up)
 
         self.pacman_group.add(self.pacman)
-      
 
     def move(self):
         for event in pygame.event.get():
-            if event.type == pygame.KEYDOWN: # pylint: disable=(no-member)
+            if event.type == pygame.KEYDOWN:  # pylint: disable=(no-member)
                 if event.key == pygame.K_LEFT:  # pylint: disable=(no-member)
                     self.pacman_move_left()
                 if event.key == pygame.K_RIGHT:  # pylint: disable=(no-member)
                     self.pacman_move_right()  # pylint: disable=(no-member)
-                if event.key == pygame.K_UP:# pylint: disable=(no-member)
+                if event.key == pygame.K_UP:  # pylint: disable=(no-member)
                     self.pacman_move_up()
                 if event.key == pygame.K_DOWN:  # pylint: disable=(no-member)
                     self.pacman_move_down()
-            if event.type == pygame.QUIT:# pylint: disable=(no-member)
+            if event.type == pygame.QUIT:  # pylint: disable=(no-member)
                 exit()
 
     def pacman_move_right(self):
@@ -117,8 +117,6 @@ class Game:
             self.move_left = False
             self.move_up = False
             self.move_down = False
-        
-        
 
     def pacman_move_left(self):
         self.move_left = True
@@ -127,7 +125,6 @@ class Game:
             self.move_right = False
             self.move_up = False
             self.move_down = False
-        
 
     def pacman_move_up(self):
         self.move_up = True
@@ -136,7 +133,6 @@ class Game:
             self.move_left = False
             self.move_right = False
             self.move_down = False
-        
 
     def pacman_move_down(self):
         self.move_down = True
@@ -145,7 +141,3 @@ class Game:
             self.move_left = False
             self.move_right = False
             self.move_up = False
-        
-
-
-
