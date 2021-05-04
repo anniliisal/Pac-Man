@@ -15,25 +15,19 @@ Sovellusta on testattu Python versiolla 3.6
 
 ## Dokumentaatio
 
+[Käyttöohje](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/käyttöohje.md)
+
 [Vaativuusmäärittely](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/vaativuusmäärittely.md)
 
 [Työaikakirjanpito](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
 [Arkkitehtuuri](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
-[Käyttöohje](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/käyttöohje.md)
-
 ## Asennus
 
-Asenna riippuvuudet komennoilla:
+Asenna riippuvuudet komennolla:
 
-* *poetry install*
-* *poetry add cowsay*
-* *poetry add invoke*
-* *poetry add coverage --dev*
-* *poetry add pygame*
-* *poetry add pylint --dev*
-
+*poetry install*
 
 ## Komentorivitoiminnot
 
@@ -43,13 +37,11 @@ Suorita ohjelma komennolla:
 
 *poetry run invoke start*
  
-
 **Testaus**
 
 Suorita ohjelman testit komennolla:
 
 *poetry run invoke test*
-
 
 **Testikattavuus**
 
