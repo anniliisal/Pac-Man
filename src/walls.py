@@ -6,6 +6,15 @@ purple = (169, 0, 255)
 
 class Wall(pygame.sprite.Sprite):
     def __init__(self, x, y, width, height):
+        """class creates walls and checks for collision between pacman and walls
+
+        Args:
+            x (x coordinate for wall)
+            y (y coordinate for wall)
+            width (wall's width)
+            height (wall's height)
+            
+        """
         super().__init__()
         self.image = pygame.Surface([width, height])
         self.image.fill(purple)

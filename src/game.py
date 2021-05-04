@@ -7,6 +7,8 @@ from points import Point
 
 class Game:
     def __init__(self):
+        """class makes pacman move and draws the screen
+        """
         self.move_down = False
         self.move_up = False
         self.move_right = False
@@ -29,16 +31,11 @@ class Game:
         self.points = self.point.draw_points(self.screen, self.points)
         self.point_count = 0
         pygame.init()  # pylint: disable=(no-member)
-        self.play()
-
-    def play(self):
-        while True:
-            self.draw_screen()
-            self.update_place()
-            self.move()
-            pygame.display.flip()
+       
 
     def draw_screen(self):
+        """draws the screen with points, walls and updated score and place for pacman
+        """
         self.screen = pygame.display.set_mode((self.width, self.height))
         self.screen.fill((0, 0, 0))
         hit = self.point.collect_points(self.pacman, self.points)
@@ -53,7 +50,9 @@ class Game:
         self.pacman_group.draw(self.screen)
 
     def update_place(self):
-
+        """updates new coordinates for pacman and uses collision method from Wall class
+           to check for collisions 
+        """
         if self.pacman_start:
             self.pacman = Pacman(
                 self.x, self.y, self.move_left, self.move_down, self.move_up)
@@ -97,6 +96,9 @@ class Game:
         self.pacman_group.add(self.pacman)
 
     def move(self):
+        """Functions for different keys. Uses different move methods depending on 
+           which key is pressed
+        """
         for event in pygame.event.get():
             if event.type == pygame.KEYDOWN:  # pylint: disable=(no-member)
                 if event.key == pygame.K_LEFT:  # pylint: disable=(no-member)
@@ -111,6 +113,8 @@ class Game:
                 exit()
 
     def pacman_move_right(self):
+        """Sets the moving direction. The current direction is True, others are False
+        """
         self.move_right = True
         if self.move_right:
             self.pacman_start = False
@@ -119,6 +123,8 @@ class Game:
             self.move_down = False
 
     def pacman_move_left(self):
+        """Sets the moving direction. The current direction is True, others are False
+        """
         self.move_left = True
         if self.move_left:
             self.pacman_start = False
@@ -127,6 +133,8 @@ class Game:
             self.move_down = False
 
     def pacman_move_up(self):
+        """Sets the moving direction. The current direction is True, others are False
+        """
         self.move_up = True
         if self.move_up:
             self.pacman_start = False
@@ -135,9 +143,13 @@ class Game:
             self.move_down = False
 
     def pacman_move_down(self):
+        """Sets the moving direction. The current direction is True, others are False
+        """
         self.move_down = True
         if self.move_down:
             self.pacman_start = False
             self.move_left = False
             self.move_right = False
             self.move_up = False
+
+
