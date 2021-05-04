@@ -58,22 +58,23 @@ class Game:
             self.pacman_move_right()
         if self.move_left:
             self.pacman_move_left()
-        if self.move_down:
-            self.pacman_move_down()
         if self.move_up:
             self.pacman_move_up()
+        if self.move_down:
+            self.pacman_move_down()
+        self.pacman_group.add(self.pacman)
 
     def pacman_move_up(self):
         """updates new coordinates for pacman and uses collision method from Wall class
            to check for collisions"""
         self.y -= 5
         self.pacman = Pacman(
-            self.x, self.y, self.move_left, self.move_down, self.move_up)
+        self.x, self.y, self.move_left, self.move_down, self.move_up)
         self.collision = self.wall.collision(self.pacman, self.walls)
         if self.collision:
             self.y += 5
             self.pacman = Pacman(
-                self.x, self.y, self.move_left, self.move_down, self.move_up)
+            self.x, self.y, self.move_left, self.move_down, self.move_up)
             self.pacman_group.add(self.pacman)
 
     def pacman_move_down(self):
@@ -81,12 +82,12 @@ class Game:
            to check for collisions"""
         self.y += 5
         self.pacman = Pacman(
-            self.x, self.y, self.move_left, self.move_down, self.move_up)
+        self.x, self.y, self.move_left, self.move_down, self.move_up)
         self.collision = self.wall.collision(self.pacman, self.walls)
         if self.collision:
             self.y -= 5
             self.pacman = Pacman(
-                self.x, self.y, self.move_left, self.move_down, self.move_up)
+            self.x, self.y, self.move_left, self.move_down, self.move_up)
             self.pacman_group.add(self.pacman)
 
     def pacman_move_left(self):
@@ -94,12 +95,12 @@ class Game:
            to check for collisions"""
         self.x -= 5
         self.pacman = Pacman(
-            self.x, self.y, self.move_left, self.move_down, self.move_up)
+        self.x, self.y, self.move_left, self.move_down, self.move_up)
         self.collision = self.wall.collision(self.pacman, self.walls)
         if self.collision:
             self.x += 5
             self.pacman = Pacman(
-                self.x, self.y, self.move_left, self.move_down, self.move_up)
+            self.x, self.y, self.move_left, self.move_down, self.move_up)
             self.pacman_group.add(self.pacman)
 
     def pacman_move_right(self):
@@ -107,12 +108,12 @@ class Game:
            to check for collisions"""
         self.x += 5
         self.pacman = Pacman(
-            self.x, self.y, self.move_left, self.move_down, self.move_up)
+        self.x, self.y, self.move_left, self.move_down, self.move_up)
         self.collision = self.wall.collision(self.pacman, self.walls)
         if self.collision:
             self.x -= 5
             self.pacman = Pacman(
-                self.x, self.y, self.move_left, self.move_down, self.move_up)
+            self.x, self.y, self.move_left, self.move_down, self.move_up)
             self.pacman_group.add(self.pacman)
 
     def move(self):
