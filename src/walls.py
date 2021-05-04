@@ -13,7 +13,7 @@ class Wall(pygame.sprite.Sprite):
             y (y coordinate for wall)
             width (wall's width)
             height (wall's height)
-            
+
         """
         super().__init__()
         self.image = pygame.Surface([width, height])

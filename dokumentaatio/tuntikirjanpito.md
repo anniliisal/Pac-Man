@@ -17,4 +17,5 @@
 - 29.4, 6 tuntia, projektin kodausta
 - 2.5, 2 tuntia, projektin koodausta
 - 3.5, 6 tuntia, projektin koodausta, testejä
-- yhteensä: 71tuntia 
+- 4.5, 4 tuntia, koodin laadun tarkistusta, docstring, testejä, käyttöohjeet
+- yhteensä: 76 tuntia 
