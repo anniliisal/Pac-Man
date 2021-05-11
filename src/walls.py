@@ -55,8 +55,8 @@ class Wall(pygame.sprite.Sprite):
             walls.add(wall)
         walls.draw(screen)
 
-    def collision(self, pacman, walls):
-        hit_list = pygame.sprite.spritecollide(pacman, walls, False)
+    def collision(self, sprite, walls):
+        hit_list = pygame.sprite.spritecollide(sprite, walls, False)
         if len(hit_list) >= 1:
             return True
         if len(hit_list) < 1:
