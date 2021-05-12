@@ -71,6 +71,6 @@ class Ghosts(pygame.sprite.Sprite):
     def ghost_collision(self, pacman, ghosts):
         hit_list = pygame.sprite.spritecollide(pacman, ghosts, False)
         if len(hit_list) >= 1:
-            print("joo")
+            return True
         if len(hit_list) < 1:
-            print("ei")
+            return False

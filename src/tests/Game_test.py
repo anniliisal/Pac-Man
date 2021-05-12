@@ -177,4 +177,8 @@ class TestGame(unittest.TestCase):
     def test_ghost_2_collision(self):
         collision = self.wall.collision(self.ghost_2, self.walls)
         self.assertEqual(collision, False)
+
+    def test_ghost_collision(self):
+        collision = self.ghosts.ghost_collision(self.pacman, self.ghosts)
+        self.assertEqual(collision, False)
     

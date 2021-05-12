@@ -72,6 +72,8 @@ class Game:
                 self.pacman_move_down()
             ghost_collision = self.ghosts.ghost_collision(
                 self.pacman, self.ghosts_list)
+            if ghost_collision is True:
+                print("joo")
             self.ghosts.ghost_1_move(self.ghost_1, self.walls)
             self.ghosts.ghost_2_move(self.ghost_2, self.walls)
             self.pacman_group.add(self.pacman)
