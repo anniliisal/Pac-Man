@@ -80,3 +80,6 @@ class Point(pygame.sprite.Sprite):
             return 1
         else:
             return 0
+
+        
+      
