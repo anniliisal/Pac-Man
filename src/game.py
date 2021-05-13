@@ -5,11 +5,9 @@ from pacman import Pacman
 from points import Point
 from ghost import Ghosts
 
-
 class Game:
     def __init__(self):
-        """class makes pacman move and draws the screen
-        """
+        """class makes pacman move and draws the screen"""
         self.move_down = False
         self.move_up = False
         self.move_right = False
@@ -19,6 +17,8 @@ class Game:
         self.height = 660
         self.x = 100
         self.y = 100
+        self.new_x = 0
+        self.new_y = 0
         self.collision = False
         self.screen = pygame.display.set_mode((self.width, self.height))
         pygame.display.set_caption("Pac-Man")
@@ -32,6 +32,8 @@ class Game:
         self.ghost_2 = Ghosts(2, 500, 210)
         self.ghosts_list.add(self.ghost_1)
         self.ghosts_list.add(self.ghost_2)
+        self.ghost_1_direction = "left"
+        self.ghost_2_direction = "right"
         self.pacman = Pacman(self.x, self.y, self.move_left,
                              self.move_down, self.move_up)
         self.wall = Wall(self.x, self.y, self.width, self.height)
@@ -58,24 +60,17 @@ class Game:
         self.ghosts_list.draw(self.screen)
 
     def update_place(self):
-        """finds correct moving method depending on the current direction"""
+        """updates place for pacman and ghosts"""
         if self.pacman_start:
             self.pacman_start_screen()
         if self.pacman_start is False:
-            if self.move_right:
-                self.pacman_move_right()
-            if self.move_left:
-                self.pacman_move_left()
-            if self.move_up:
-                self.pacman_move_up()
-            if self.move_down:
-                self.pacman_move_down()
+            self.pacman_move(self.new_x, self.new_y)
             ghost_collision = self.ghosts.ghost_collision(
                 self.pacman, self.ghosts_list)
             if ghost_collision is True:
                 print("joo")
-            self.ghosts.ghost_1_move(self.ghost_1, self.walls)
-            self.ghosts.ghost_2_move(self.ghost_2, self.walls)
+            self.ghost_1_direction = self.ghosts.ghost_move(self.ghost_1, self.ghost_1_direction, self.walls)
+            self.ghost_2_direction = self.ghosts.ghost_move(self.ghost_2, self.ghost_2_direction, self.walls)
             self.pacman_group.add(self.pacman)
 
     def pacman_start_screen(self):
@@ -85,54 +80,21 @@ class Game:
         start = pygame.image.load("src/pictures/start.png")
         self.screen.blit(start, (205, 180))
 
-    def pacman_move_up(self):
+    def pacman_move(self, new_x, new_y):
         """updates new coordinates for pacman and uses collision method from Wall class
-           to check for collisions"""
-        self.y -= 2
+           to check for collision
+        Args:
+            new_x (adds new coordinates)
+            new_y (adds new coordinates)
+        """
+        self.x += self.new_x
+        self.y += self.new_y
         self.pacman = Pacman(
             self.x, self.y, self.move_left, self.move_down, self.move_up)
         self.collision = self.wall.collision(self.pacman, self.walls)
         if self.collision:
-            self.y += 2
-            self.pacman = Pacman(
-                self.x, self.y, self.move_left, self.move_down, self.move_up)
-        self.pacman_group.add(self.pacman)
-
-    def pacman_move_down(self):
-        """updates new coordinates for pacman and uses collision method from Wall class
-           to check for collisions"""
-        self.y += 2
-        self.pacman = Pacman(
-            self.x, self.y, self.move_left, self.move_down, self.move_up)
-        self.collision = self.wall.collision(self.pacman, self.walls)
-        if self.collision:
-            self.y -= 2
-            self.pacman = Pacman(
-                self.x, self.y, self.move_left, self.move_down, self.move_up)
-        self.pacman_group.add(self.pacman)
-
-    def pacman_move_left(self):
-        """updates new coordinates for pacman and uses collision method from Wall class
-           to check for collisions"""
-        self.x -= 2
-        self.pacman = Pacman(
-            self.x, self.y, self.move_left, self.move_down, self.move_up)
-        self.collision = self.wall.collision(self.pacman, self.walls)
-        if self.collision:
-            self.x += 2
-            self.pacman = Pacman(
-                self.x, self.y, self.move_left, self.move_down, self.move_up)
-        self.pacman_group.add(self.pacman)
-
-    def pacman_move_right(self):
-        """updates new coordinates for pacman and uses collision method from Wall class
-           to check for collisions"""
-        self.x += 2
-        self.pacman = Pacman(
-            self.x, self.y, self.move_left, self.move_down, self.move_up)
-        self.collision = self.wall.collision(self.pacman, self.walls)
-        if self.collision:
-            self.x -= 2
+            self.x -= self.new_x
+            self.y -= self.new_y
             self.pacman = Pacman(
                 self.x, self.y, self.move_left, self.move_down, self.move_up)
         self.pacman_group.add(self.pacman)
@@ -162,6 +124,9 @@ class Game:
             self.move_left = False
             self.move_up = False
             self.move_down = False
+            self.new_x = 2
+            self.new_y = 0
+            self.pacman_move(self.new_x, self.new_y)
 
     def pacman_set_direction_left(self):
         """Sets the moving direction. The current direction is True, others are False"""
@@ -170,7 +135,10 @@ class Game:
             self.move_right = False
             self.move_up = False
             self.move_down = False
-
+            self.new_x = -2
+            self.new_y = 0
+            self.pacman_move(self.new_x, self.new_y)
+            
     def pacman_set_direction_up(self):
         """Sets the moving direction. The current direction is True, others are False"""
         self.move_up = True
@@ -178,6 +146,9 @@ class Game:
             self.move_left = False
             self.move_right = False
             self.move_down = False
+            self.new_x = 0
+            self.new_y = -2
+            self.pacman_move(self.new_x, self.new_y)
 
     def pacman_set_direction_down(self):
         """Sets the moving direction. The current direction is True, others are False"""
@@ -186,3 +157,6 @@ class Game:
             self.move_left = False
             self.move_right = False
             self.move_up = False
+            self.new_x = 0
+            self.new_y = 2
+            self.pacman_move(self.new_x, self.new_y)

@@ -15,52 +15,29 @@ class Ghosts(pygame.sprite.Sprite):
         self.rect.x = x
         self.rect.y = y
         self.wall = Wall
-        self.ghost_1_direction = "left"
-        self.ghost_2_direction = "right"
-
-    def ghost_1_move(self, ghost, walls):
-        if self.ghost_1_direction == "right":
+        
+    def ghost_move(self, ghost, direction, walls):
+        if direction == "right":
             ghost.rect.x += 2
-        if self.ghost_1_direction == "left":
+        if direction == "left":
             ghost.rect.x -= 2
-        if self.ghost_1_direction == "up":
+        if direction == "up":
             ghost.rect.y -= 2
-        if self.ghost_1_direction == "down":
+        if direction == "down":
             ghost.rect.y += 2
         collision = self.wall.collision(self, ghost, walls)
         if collision:
-            if self.ghost_1_direction == "right":
+            if direction == "right":
                 ghost.rect.x -= 2
-            if self.ghost_1_direction == "left":
+            if direction == "left":
                 ghost.rect.x += 2
-            if self.ghost_1_direction == "up":
+            if direction == "up":
                 ghost.rect.y += 2
-            if self.ghost_1_direction == "down":
+            if direction == "down":
                 ghost.rect.y -= 2
-            self.ghost_1_direction = self.new_direction(self.ghost_1_direction)
-            print(self.ghost_1_direction)
-
-    def ghost_2_move(self, ghost, walls):
-        if self.ghost_2_direction == "right":
-            ghost.rect.x += 2
-        if self.ghost_2_direction == "left":
-            ghost.rect.x -= 2
-        if self.ghost_2_direction == "up":
-            ghost.rect.y -= 2
-        if self.ghost_2_direction == "down":
-            ghost.rect.y += 2
-        collision = self.wall.collision(self, ghost, walls)
-        if collision:
-            if self.ghost_2_direction == "right":
-                ghost.rect.x -= 2
-            if self.ghost_2_direction == "left":
-                ghost.rect.x += 2
-            if self.ghost_2_direction == "up":
-                ghost.rect.y += 2
-            if self.ghost_2_direction == "down":
-                ghost.rect.y -= 2
-            self.ghost_2_direction = self.new_direction(self.ghost_2_direction)
-            print(self.ghost_2_direction)
+            new_direction = self.new_direction(direction)
+            return new_direction
+        return direction
 
     def new_direction(self, old_direction):
         direction_list = ["up", "down", "left", "right"]
