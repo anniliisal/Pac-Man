@@ -24,5 +24,5 @@
 - 13.5, 3 tuntia, projektin koodausta
 - 14.5, 9 tuntia, projektin koodausta, koodin parantelua, testejä
 - 15.5, 3 tuntia, testejä
-- 16.5, tuntia, dokumentointia.
-- yhteensä: 76 tuntia 
+- 16.5, 8 tuntia, dokumentointia
+- yhteensä: 114 tuntia 
