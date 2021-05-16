@@ -66,6 +66,3 @@ Laatuvaatimukset voi tarkistaa komennolla:
 
 
 
-
-
-
