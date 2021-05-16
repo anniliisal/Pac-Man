@@ -6,6 +6,10 @@ Ohjelmaa on testattu sekä automatisoiduin yksikkö- ja integraatiotestein unitt
 
 Ohjelman yksikkö- sekä integraatiotestausta on suoritettu pacman_test.py tiedostossa TestGame-luokalla.
 
+## Järjestelmätestaus
+
+Ohjelman järjestelmätestaus on suoritettu manuaalisesti.
+
 ## Testikattavuus
 
 Ohjelman testauksen haaraumautumakattavuus on 70%.
@@ -17,7 +21,5 @@ Ohjelman testauksen haaraumautumakattavuus on 70%.
 Ohjelma on asennettu [käyttöohjeen](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/käyttöohje.md) määrittämällä tavalla. 
 Ohjelmaa on testattu sekä macOS- että Linux-ympäristöissä. Sovellusta on testattu Python versiolla 3.6
 
-## Järjestelmätestaus
 
-Ohjelman järjestelmätestaus on suoritettu manuaalisesti.
 
