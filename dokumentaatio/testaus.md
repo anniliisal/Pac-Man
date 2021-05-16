@@ -4,9 +4,15 @@ Ohjelmaa on testattu sekä automatisoiduin yksikkö- ja integraatiotestein unitt
 
 ## Yksikkö- ja integraatiotestaus
 
-Sovelluslogiikasta vastaavaa Game-luokkaa testataan game_test.py tiedostossa.
+Ohjelman yksikkö- sekä integraatiotestausta on suoritettu pacman_test.py tiedostossa.
 
 ### Testikattavuus
+
+![testikattavuus](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/Näyttökuva%202021-5-16%20kello%2016.08.05.png)
+
+#### Asennus
+
+Ohjelma on haetOhjelmaa on testattu sekä macOS- että Linux-ympäristössä.
 
 #### Järjestelmätestaus
 
