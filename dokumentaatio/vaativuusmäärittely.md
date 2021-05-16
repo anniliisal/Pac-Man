@@ -21,7 +21,7 @@ Kentällä liikkuu myös haamuja, joita pitää varoa.
 
 #### Jatkokehitysideoita
 
-- Pelaaja voi määrittää peliss olevien haamujen määrän. 
+- Pelaaja voi määrittää pelissä olevien haamujen määrän. 
 - Pelaajalla on jokin määrä elämiä, jotka vähenevät haamuun osuessa, eli peli ei päättyisi ensimmäisestä osumasta.
 - Pelissä on eriarvoisia pisteitä.
 - Isompiarvoiseen pisteeseen osuessa Pac-man saa hetkellisen kyvyn syödä haamuja.
