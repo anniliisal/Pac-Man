@@ -12,7 +12,23 @@ Ohjelman voi käynnistää komennolla:
 
 *poetry run invoke start*
 
-### Pelaaminen
+### Ohjelman testaaminen
+
+Suorita testit komennolla:
+
+*poetry run invoke test*
+
+Generoi ohjelman testikattavuus komennolla:
+
+*poetry run invoke coverage-report*
+
+Raportti generoituu htmlcov-hakemistoon.
+
+Laatuvaatimukset voi tarkistaa komennolla:
+
+*poetry run invoke lint*
+
+#### Pelaaminen
 
 - Pelin avautuessa avautuu aloitusnäkymä:
 
@@ -23,4 +39,7 @@ Ohjelman voi käynnistää komennolla:
 - Pac-man syö pisteitä niiden osuessa kohdalle. Pelin voittaa, kun saa syötyä kaikki 87 pistettä.
 - Jos Pac-man törmää haamuun, peli päättyy. Näytölle avautuu ikkuna, jossa näkyy edellisen pelin pisteet. 
   Pelin voi aloittaa alusta painamalla enter-näppäintä.
+  
+  
+
 
