@@ -18,32 +18,32 @@ class TestGame(unittest.TestCase):
         self.game = Game()
 
     def test_set_direction_left(self):
-        self.game.pacman_set_direction_left()
+        self.game._pacman_set_direction_left()
         self.assertEqual(self.game.move_left, True)
-        self.assertEqual(self.game.new_x, -1)
-        self.assertEqual(self.game.new_y, 0)
+        self.assertEqual(self.game._new_x, -1)
+        self.assertEqual(self.game._new_y, 0)
 
     def test_set_direction_right(self):
-        self.game.pacman_set_direction_right()
+        self.game._pacman_set_direction_right()
         self.assertEqual(self.game.move_right, True)
-        self.assertEqual(self.game.new_x, 1)
-        self.assertEqual(self.game.new_y, 0)
+        self.assertEqual(self.game._new_x, 1)
+        self.assertEqual(self.game._new_y, 0)
 
     def test_set_direction_up(self):
-        self.game.pacman_set_direction_up()
+        self.game._pacman_set_direction_up()
         self.assertEqual(self.game.move_up, True)
-        self.assertEqual(self.game.new_x, 0)
-        self.assertEqual(self.game.new_y, -1)
+        self.assertEqual(self.game._new_x, 0)
+        self.assertEqual(self.game._new_y, -1)
 
     def test_set_direction_down(self):
-        self.game.pacman_set_direction_down()
+        self.game._pacman_set_direction_down()
         self.assertEqual(self.game.move_down, True)
-        self.assertEqual(self.game.new_x, 0)
-        self.assertEqual(self.game.new_y, 1)
+        self.assertEqual(self.game._new_x, 0)
+        self.assertEqual(self.game._new_y, 1)
 
     def test_pacman_move_down(self):
-        self.game.new_x = 0
-        self.game.new_y = 1
+        self.game._new_x = 0
+        self.game._new_y = 1
         self.game.pacman_move()
         x = 100
         y = 101
@@ -51,18 +51,18 @@ class TestGame(unittest.TestCase):
         self.assertEqual(self.game.y, y)
 
     def test_pacman_collision(self):
-        self.game.new_x = 0
-        self.game.new_y = -1
+        self.game._new_x = 0
+        self.game._new_y = -1
         self.game.pacman_move()
-        if self.game.collision:
+        if self.game._collision:
             x = 100
             y = 100
             self.assertEqual(self.game.x, x)
             self.assertEqual(self.game.y, y)
 
     def test_pacman_move_left(self):
-        self.game.new_x = -1
-        self.game.new_y = 0
+        self.game._new_x = -1
+        self.game._new_y = 0
         self.game.pacman_move()
         x = 99
         y = 100
@@ -70,8 +70,8 @@ class TestGame(unittest.TestCase):
         self.assertEqual(self.game.y, y)
 
     def test_pacman_move_right(self):
-        self.game.new_x = 1
-        self.game.new_y = 0
+        self.game._new_x = 1
+        self.game._new_y = 0
         self.game.pacman_move()
         x = 101
         y = 100
@@ -91,7 +91,7 @@ class TestGame(unittest.TestCase):
         test_pacman = Pacman(40, 460, False, False, True)
         hit = self.point.collect_points(self, test_pacman, self.game.points)
         self.game.point_count += hit
-        self.game.get_points()
+        self.game._get_points()
         self.assertEqual(self.game.game_win, True)
 
     def test_game_point_collect(self):
@@ -151,7 +151,7 @@ class TestGame(unittest.TestCase):
                                                                 self.game.pacman, self.game.ghosts_list)
         self.assertEqual(self.game.ghost_collision, False)
 
-    def new_direction(self, old_direction):
+    def _new_direction(self, old_direction):
         direction_list = ["up", "down", "left", "right"]
         direction_list.remove(old_direction)
         direction = random.choice(direction_list)
@@ -159,7 +159,7 @@ class TestGame(unittest.TestCase):
 
     def test_ghost_new_direction(self):
         direction = self.game.ghost_1_direction
-        new_direction = self.ghosts.new_direction(self, direction)
+        new_direction = self.ghosts._new_direction(self, direction)
         self.assertNotEqual(direction, new_direction)
 
     def test_pacman_and_wall_collision_False(self):
