@@ -5,7 +5,7 @@ Kentällä liikkuu myös haamuja joita pitää varoa.
 
 ## Release 
 
-[Pac-Man](https://github.com/anniliisal/Pac-Man/releases/tag/%23loppupalautus)
+[Pac-Man](https://github.com/anniliisal/Pac-Man/releases/tag/%23pac-man-loppupalautus)
 
 ## Python-versio
 
