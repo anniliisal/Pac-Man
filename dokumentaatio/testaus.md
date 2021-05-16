@@ -14,7 +14,7 @@ Ohjelman testauksen haaraumautumakattavuus on 70%.
 
 ## Asennus
 
-Ohjelma on asennettu [käyttöohjeen](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/käyttöohje.md) määrittämällä tavalla. Ohjelmaa on testattu sekä macOS- että Linux-ympäristöissä.
+Ohjelma on asennettu [käyttöohjeen](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/käyttöohje.md) määrittämällä tavalla. Ohjelmaa on testattu sekä macOS- että Linux-ympäristöissä. Sovellusta on testattu Python versiolla 3.6
 
 ## Järjestelmätestaus
 
