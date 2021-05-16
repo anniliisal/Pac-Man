@@ -3,13 +3,9 @@
 Sovelluksella pelataan Pac-Man tyylistä peliä. Pac-manilla liikutaan sokkeloita pitkin ja syödään pisteitä.
 Kentällä liikkuu myös haamuja joita pitää varoa. 
 
-## Release 1
+## Release 
 
-[viikko5](https://github.com/anniliisal/ot-harjoitustyo/releases)
-
-## Release 2
-
-[viikko6](https://github.com/anniliisal/ot-harjoitustyo/releases/tag/viikko6)
+[Pac-Man](https://github.com/anniliisal/Pac-Man/releases/tag/%23loppupalautus)
 
 ## Python-versio
 
