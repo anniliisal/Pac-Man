@@ -10,11 +10,10 @@ Main-luokka toimii pelin tapahtumankäsittelijänä. Uuden pelin alkaessa Main-l
 Pelin ollessa käynnissä Main-luokan play-metodi kutsuu Game-luokan metodeita draw_screen, update_place ja game.move, 
 sekä päivittää pelin tilan metodilla pygame.display.flip(). 
 
-## Päätoiminnallisuudet
 
 !
 
-Main-luokka kutsuu luokan Game konstruktoria pelinäkymän alustamista varten. Game-luokan konstruktori luo oman luokan atribuutit, 
+* Main-luokka kutsuu luokan Game konstruktoria pelinäkymän alustamista varten. Game-luokan konstruktori luo oman luokan atribuutit, 
 kutsuen muiden luokkien konstruktoreita ja rakennusmetodeita. 
 
 !
