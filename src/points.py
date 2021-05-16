@@ -18,11 +18,10 @@ class Point(pygame.sprite.Sprite):
         self.rect.y = y
         self.rect.x = x
 
-    def draw_points(self, screen, points):
+    def draw_points(self, points):
         """creates points coordinates and adds them to the points sprite group
 
         Args:
-            screen (the game screen where to draw points)
             points (sprite group-list where to store points)
 
         Returns:
@@ -76,10 +75,7 @@ class Point(pygame.sprite.Sprite):
             0, if there is no collision
         """
         hit_list = pygame.sprite.spritecollide(pacman, points, True)
-        if len(hit_list) >= 1:
+        if len(hit_list) == 1:
             return 1
-        else:
-            return 0
-
-        
-      
+        if len(hit_list) == 2:
+            return 2

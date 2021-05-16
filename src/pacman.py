@@ -14,7 +14,7 @@ class Pacman(pygame.sprite.Sprite):
             up (rotates image to up if True)
         """
         super().__init__()
-        self.image = pygame.image.load("src/pictures/pacman4png.png")
+        self.image = pygame.image.load("src/pictures/pacman6.2.png")
         if up is True:
             self.image = pygame.transform.rotate(self.image, 90)
         if left is True:
