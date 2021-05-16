@@ -16,7 +16,7 @@ Ohjelman voi käynnistää komennolla:
 
 - Pelin avautuessa avautuu aloitusnäkymä.
 
-![kuva](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/kuva.png)
+![kuva](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/Näyttökuva%202021-5-16%20kello%2015.45.26.png)
 
 - Pac-manin liikuttaminen eri suuntiin tapahtuu nuolinäppäimillä 
 - Pelin voi aloittaa painamalla enter-näppäintä
