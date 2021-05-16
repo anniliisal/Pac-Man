@@ -14,7 +14,7 @@ Ohjelman voi käynnistää komennolla:
 
 ### Pelaaminen
 
-- Pelin avautuessa avautuu aloitusnäkymä.
+- Pelin avautuessa avautuu aloitusnäkymä:
 
 ![kuva](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/Näyttökuva%202021-5-16%20kello%2015.45.26.png)
 
