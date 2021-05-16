@@ -40,9 +40,7 @@ Update_place-metodi kutsuu Ghosts-luokan ghost_collision-metodia, jossa tarkiste
 * Main-luokan play-metodi kutsuu Game-luokan move-metodia. Move-metodi ohjaa pacmanin liikkumista ohjaamalla suunnanvaihtometodiin, joka määrittyy siitä, mitä näppäintä on painettu alas. Luokkakaavion esimerkkitilanteessa pelaaja on painanut oikeaa nuolinäppäintä, joka ohjaa metodiin pacman_set_direction_right. Pacman_set_direction_right 
 muuttaa pacmanin suunta- ja koordinaatti atribuutit oikeaa suuntaa vastaavaksi. 
 
+## Luokkien yhteyksiä ja päämetodeita kuvaava sekvenssikaavio
 
-## Alustava luokkakaavio
-![luokkakaavio](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/Pac-Man.png)
+![sekvenssikaavio](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/sekvenssikaavio.png)
 
-## Alustava sekvenssikaavio
-![sekvenssikaavio](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/sekvenssikaavio4.png)
