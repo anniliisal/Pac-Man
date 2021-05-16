@@ -11,12 +11,12 @@ Pelin ollessa käynnissä Main-luokan play-metodi kutsuu Game-luokan metodeita d
 sekä päivittää pelin tilan metodilla pygame.display.flip(). 
 
 
-!
+![game](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/Game().png)
 
 * Main-luokka kutsuu luokan Game konstruktoria pelinäkymän alustamista varten. Game-luokan konstruktori luo oman luokan atribuutit, 
 kutsuen muiden luokkien konstruktoreita ja rakennusmetodeita. 
 
-!
+![play](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/play().png)
 
 * Main-luokan play-metodi kutsuu Game-luokan draw_screen-metodia, joka piirtää pygame-ikkunaan seinät (self.walls), 
 pisteet (self.points), pistetilanteen (self.point_count), haamut (self.ghosts_list), sekä pacmanin (self.pacman_group). Metodi kutsuu
