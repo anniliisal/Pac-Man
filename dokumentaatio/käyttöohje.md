@@ -23,3 +23,4 @@ Ohjelman voi käynnistää komennolla:
 - Pac-man syö pisteitä niiden osuessa kohdalle. Pelin voittaa, kun saa syötyä kaikki 87 pistettä.
 - Jos Pac-man törmää haamuun, peli päättyy. Näytölle avautuu ikkuna, jossa näkyy edellisen pelin pisteet. 
   Pelin voi aloittaa alusta painamalla enter-näppäintä.
+
