@@ -10,9 +10,7 @@ Pelin voi aloittaa painamalla enter-näppäintä, jonka jälkeen ikkuna poistuu 
 
 ## Sovelluslogiikka
 
-Main-luokka toimii pelin tapahtumankäsittelijänä. Uuden pelin alkaessa Main-luokka kutsuu Game-luokkaa pelin alustusta varten. 
-Pelin ollessa käynnissä Main-luokan play-metodi kutsuu Game-luokan metodeita draw_screen, update_place ja game.move, 
-sekä päivittää pelin tilan metodilla pygame.display.flip(). 
+Main-luokka toimii pelin tapahtumankäsittelijänä. Pelin ollessa käynnissä Main-luokan play-metodi kutsuu Game-luokan metodeita draw_screen, update_place ja game.move, sekä päivittää pelin tilan metodilla pygame.display.flip(). 
 
 ![game](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/Game().png)
 
