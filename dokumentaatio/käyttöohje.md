@@ -12,7 +12,7 @@ Ohjelman voi käynnistää komennolla:
 
 *poetry run invoke start*
 
-### Ohjelman testaaminen
+## Ohjelman testaaminen
 
 Suorita testit komennolla:
 
@@ -28,7 +28,7 @@ Laatuvaatimukset voi tarkistaa komennolla:
 
 *poetry run invoke lint*
 
-#### Pelaaminen
+## Pelaaminen
 
 - Pelin avautuessa avautuu aloitusnäkymä:
 
