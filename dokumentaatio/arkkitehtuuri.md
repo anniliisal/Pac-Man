@@ -24,6 +24,7 @@ Pelissä näytölle piirretyt objektit ovat:
   aiheuttavat pelin päättymisen. 
 * Seinät, jotka rajaavat Pac-manin ja haamujen liikkumista.
 * Pisteet, joita Pac-man voi kerätä niihin osuessa.
+* Pistelaskuri, jossa näkyy kerättyjen pisteiden määrä
 
 Kaikki näytölle piirretyt objektit, poislukien pistelaskuri, ovat Sprite-olioita. 
 
