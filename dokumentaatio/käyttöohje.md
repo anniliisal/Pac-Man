@@ -14,10 +14,12 @@ Ohjelman voi käynnistää komennolla:
 
 ### Pelaaminen
 
+- Pelin avautuessa avautuu aloitusnäkymä.
 
-- K
-![kuva](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/Näyttökuva%202021-5-16%20kello%2015.10.22.png)
+![kuva](https://github.com/anniliisal/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/kuva.png)
 
-- Pac-manin liikuttaminen eri suuntiin tapahtuu nuolinäppäimillä
-
-Pac-man syö pisteitä niiden osuessa kohdalle. Pelin voittaa, kun saa syötyä kaikki pisteet.
+- Pac-manin liikuttaminen eri suuntiin tapahtuu nuolinäppäimillä 
+- Pelin voi aloittaa painamalla enter-näppäintä
+- Pac-man syö pisteitä niiden osuessa kohdalle. Pelin voittaa, kun saa syötyä kaikki 87 pistettä.
+- Jos Pac-man törmää haamuun, peli päättyy. Näytölle avautuu ikkuna, jossa näkyy edellisen pelin pisteet. 
+  Pelin voi aloittaa alusta painamalla enter-näppäintä.
