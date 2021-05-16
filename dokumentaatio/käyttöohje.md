@@ -14,6 +14,8 @@ Ohjelman voi käynnistää komennolla:
 
 ### Pelaaminen
 
+
+- K
 - Pac-manin liikuttaminen eri suuntiin tapahtuu nuolinäppäimillä
 
 Pac-man syö pisteitä niiden osuessa kohdalle. Pelin voittaa, kun saa syötyä kaikki pisteet.
